@@ -9,12 +9,18 @@
   font-size: 9em;
   color: #d89dd3;
 }
+.logo a:visited,
+.logo a:link,
+.logo a:active {
+  text-decoration: none;
+  color: #d89dd3;
+}
 
 .slogan {
-  margin-top: 15%;
+  margin-top: 20%;
   margin-left: 3%;
   font-family: "Pacifico", cursive;
-  font-size: 3.8em;
+  font-size: 3.5em;
   color: #161516;
 }
 
@@ -23,6 +29,9 @@
   margin-left: 90%;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  margin-top: 50px;
 }
 
 .navigation-burger:hover {
@@ -43,13 +52,12 @@
   left: 0;
   width: 15%;
   height: 100%;
-  border: 4px #d89dd3 dotted;
-  background-image: linear-gradient(to bottom, #faf6f6, #f5ecb8, #faf6f6);
+  border: 5px #666545 solid;
+  background-color: #faf6f6;
   justify-content: center;
   transform: translate(-100%);
   transition: all 0.5s ease-in-out;
   z-index: 10;
-  border-radius: 15px;
 }
 
 .side-bar ul {
@@ -62,7 +70,7 @@
   list-style: none;
   margin-bottom: 40px;
   font-family: "Satisfy", cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .side-bar ul li:hover {
@@ -87,7 +95,7 @@
 
 .side-bar .cross img {
   width: 50px;
-  margin: 20px 0 0 200px;
+  margin: 15px 0 0 180px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -102,6 +110,7 @@
 .side-icons ul {
   display: flex;
   justify-content: center;
+  padding-right: 10px;
 }
 
 .side-icons ul li {
@@ -152,7 +161,7 @@
 
 .home-box {
   display: flex;
-  background-image: linear-gradient(to bottom, #faf6f6, #c4c29c, #c4c29c);
+  background-image: linear-gradient(to bottom, #faf6f6, #c4c29c);
 }
 .home-box img {
   width: 1000px;
@@ -324,11 +333,11 @@
   width: 25%;
   height: auto;
   background-color: #f3f1e2;
-  border: 4px solid #fee554;
+  border: 4px solid #666545;
   margin: auto;
   padding: 15px 10px;
-  border-radius: 15px;
   margin-top: 10px;
+  border-radius: 10px;
 }
 .question {
   display: flex;
@@ -336,7 +345,7 @@
 }
 
 .question-block h3 {
-  color: #d89dd3;
+  color: #666545;
   font-family: "Abel", sans-serif;
 }
 .minus img,
@@ -426,7 +435,7 @@
 .menu-room img {
   width: 250px;
   height: 350px;
-  box-shadow: #333233 3px 3px 3px;
+  box-shadow: #d89dd3 3px 3px 1px;
   object-fit: cover;
 }
 .menu-room img:hover {
@@ -441,6 +450,7 @@
   height: 100%;
   background-color: #33323342;
   position: fixed;
+  z-index: 10;
 }
 
 .card-container {
@@ -459,12 +469,14 @@
   border-radius: 20px;
   border: 5px dotted #c4c29c;
   z-index: 11;
-  padding: 50px;
+  padding: 35px;
+  border-radius: 15px;
 }
 
 .card h4 {
   font-family: "Satisfy", cursive;
   font-size: 35px;
+  text-decoration: underline dotted 5px #d89dd3;
 }
 
 span {
@@ -474,10 +486,9 @@ span {
 .food-container {
   width: 100%;
   height: 45%;
-  background: #f3f1e2;
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .food-items {
@@ -506,13 +517,14 @@ span {
   margin-top: 10px;
   font-family: "Abel", sans-serif;
   margin-left: 20px;
+  font-weight: bold;
 }
 
 .x {
   position: absolute;
   width: 50px;
   height: 50px;
-  right: 22%;
+  right: 21%;
   margin-top: -25px;
   border: transparent;
   outline: none;

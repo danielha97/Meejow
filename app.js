@@ -1,3 +1,23 @@
+const menuImages = document.querySelectorAll(".menu-room img");
+const crosses = document.querySelectorAll(".x"); 
+
+menuImages.forEach((menuImg)=>{
+    menuImg.addEventListener("click", (e)=>{
+        let menu = e.currentTarget.parentElement.nextElementSibling;
+        menu.classList.add("show")
+        event.preventDefault();
+    });
+})
+
+crosses.forEach((cross)=>{
+    cross.addEventListener("click",(e)=>{
+    let cancel = e.currentTarget.parentElement.parentElement;
+    cancel.classList.remove("show")
+    event.preventDefault();
+    })
+})
+
+
 const toggleBtn = document.querySelector(".navigation-burger");
 const closeBtn = document.querySelector(".cross");
 const sideBar = document.querySelector(".side-bar");
@@ -53,3 +73,6 @@ function rotate(){
         review.style.transform = `translateX(-${tracker * 100}%)`;
     });
 }
+
+
+
