@@ -463,7 +463,7 @@
 
 .card {
   width: 60%;
-  height: 65%;
+  height: 40%;
   margin: 10% auto;
   background: #f3f1e2;
   border-radius: 20px;
@@ -566,4 +566,75 @@ span {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media all and (max-width: 1200px) {
+  .home-box img {
+    width: 650px;
+    padding-top: 50px;
+  }
+  .slogan {
+    font-size: 3em;
+  }
+  .side-bar {
+    width: 20%;
+  }
+}
+@media all and (max-width: 768px) {
+  .home-box img {
+    width: 500px;
+    padding-top: 100px;
+  }
+  .slogan {
+    font-size: 3em;
+  }
+  .logo {
+    font-size: 5em;
+  }
+  .header-circle {
+    width: 160px;
+    height: 160px;
+  }
+  .butt-contain {
+    display: none;
+  }
+  .side-bar {
+    width: 35%;
+  }
+  .card {
+    width: 90%;
+  }
+  .x {
+    right: 7%;
+  }
+  .question-block {
+    width: 50%;
+  }
+}
+@media all and (max-width: 480px) {
+  .slogan {
+    font-size: 2em;
+  }
+  .side-bar {
+    width: 45%;
+  }
+  .side-bar .cross img {
+    margin: 15px 0 0 150px;
+  }
+  .menu-house {
+    display: block;
+  }
+  .food-container {
+    display: block;
+    justify-content: unset;
+  }
+  .food-items {
+    display: block;
+  }
+  .card {
+    height: 80%;
+  }
+  .food-items ul li {
+    margin-top: 2px;
+  }
 }
