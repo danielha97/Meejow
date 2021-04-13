@@ -52,7 +52,7 @@
   left: 0;
   width: 15%;
   height: 100%;
-  border: 5px #666545 solid;
+  border-right: 5px #666545 solid;
   background-color: #faf6f6;
   justify-content: center;
   transform: translate(-100%);
