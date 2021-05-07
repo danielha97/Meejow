@@ -567,6 +567,15 @@ span {
   font-weight: bold;
   cursor: pointer;
 }
+@media all and (max-width: 1340px) {
+  .home-box img {
+    width: 700px;
+    margin-top: 30%;
+  }
+  .side-bar {
+    width: 20%;
+  }
+}
 
 @media all and (max-width: 1200px) {
   .home-box img {
